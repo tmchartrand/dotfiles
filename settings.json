@@ -1,4 +1,5 @@
 {
     "workbench.colorTheme": "Default Dark+",
-    "git.useIntegratedAskPass": false
+    "git.useIntegratedAskPass": false,
+    "editor.fontSize": 13
 }
