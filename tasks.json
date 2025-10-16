@@ -6,7 +6,7 @@
         {
             "label": "chezmoi sync",
             "type": "shell",
-            "command": "bash -c '( while true; do chezmoi re-add; sleep 60; done )'",
+            "command": "bash -c '( while true; do chezmoi re-add; sleep 60; done ) &'",
             "isBackground": true,
             "hide": true,
             "runOptions": {
