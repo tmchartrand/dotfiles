@@ -14,7 +14,7 @@
                 "runOn": "folderOpen"
             },
             "presentation": {
-                "panel": "dedicated",
+                "panel": "new",
                 "reveal": "never"
             }
         }
