@@ -8,6 +8,7 @@
             "type": "shell",
             "command": "bash -c '( while true; do chezmoi re-add; sleep 60; done )'",
             "isBackground": true,
+            "hide": true,
             "runOptions": {
                 "instanceLimit": 1,
                 "runOn": "folderOpen"
