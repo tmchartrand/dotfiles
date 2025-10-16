@@ -12,7 +12,8 @@ This is an example repo for managing VS Code and other user settings in Code Oce
       fi
       ```
       and the first time you launch the capsule after rebuilding, run `chezmoi update` from the terminal.
- - any changes made to the user settings, keymappings, or tasks will be automatically pushed to your dotfiles repo and available for use in other capsules!      
+ - changes made to the user settings, keymappings, or tasks will be automatically pushed to your dotfiles repo and available for use in other capsules! (checked in the background every minute)
+ - new changes will be pulled from github each time the capsule is launched.
 
   Other useful commands:
    - `chezmoi status` to check if changes are up-to-date and synced (no output means fully synced).
