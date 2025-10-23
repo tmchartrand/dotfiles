@@ -1,3 +1,161 @@
 {
-    "workbench.colorTheme": "Default Dark+"
+    "autoDocstring.docstringFormat": "numpy",
+    "csv-preview.formatValues": "never",
+    "csv-preview.resizeColumns": "all",
+    "dev.containers.defaultExtensions": [
+        "GitHub.copilot"
+    ],
+    "dev.containers.defaultExtensionsIfInstalledLocally": [
+        "GitHub.copilot-chat",
+        "mhutchie.git-graph",
+        "arturock.gitstash",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-toolsai.jupyter",
+        "njpwerner.autodocstring",
+        "mechatroner.rainbow-csv"
+    ],
+    "diffEditor.ignoreTrimWhitespace": false,
+    "dotfiles.repository": "https://github.com/tmchartrand/codeocean_dotfiles/",
+    "editor.find.autoFindInSelection": "multiline",
+    "editor.formatOnSaveMode": "modifications",
+    "editor.inlineSuggest.enabled": true,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [
+
+        80,
+        100,
+        120,
+    ],
+    "explorer.autoReveal": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.fileNesting.enabled": true,
+    "explorer.sortOrder": "type",
+    "extensions.ignoreRecommendations": false,
+    "files.exclude": {
+        "**/*-checkpoint.ipynb": true,
+        "**/*-checkpoint.py": true,
+        "**/*.egg-info": true,
+        "**/*.pyc": true,
+        "**/.bamboo": true,
+        "**/.eggs": true,
+        "**/.ipynb_checkpoints": true,
+        "**/.mypy_cache": true,
+        "**/.pytest_cache": true,
+        "**/.vscode": true,
+        "**/__pycache__": true,
+        "**/renv": true
+    },
+    "files.readonlyFromPermissions": true,
+    "files.watcherExclude": {
+        "data/**": true
+    },
+    "git-graph.dialog.merge.noFastForward": false,
+    "git-graph.repository.commits.mute.commitsThatAreNotAncestorsOfHead": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.pullBeforeCheckout": true,
+    "github.codespaces.defaultExtensions": [
+        "GitHub.copilot",
+        "GitHub.codespaces",
+        "mhutchie.git-graph",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+        "njpwerner.autodocstring",
+    ],
+    "github.codespaces.showPerformanceExplorer": true,
+    "githubIssues.queries": [
+        {
+            "label": "My Issues",
+            "query": "default"
+        },
+        {
+            "label": "Created Issues",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+        }
+    ],
+    "githubPullRequests.createOnPublishBranch": "never",
+    "githubPullRequests.fileListLayout": "flat",
+    "githubPullRequests.pullBranch": "never",
+    "jupyter.allowUnauthorizedRemoteConnection": true,
+    "jupyter.askForKernelRestart": false,
+    "jupyter.disableJupyterAutoStart": true,
+    "jupyter.pythonExportMethod": "commentMagics",
+    "notebook.cellToolbarLocation": {
+        "default": "left",
+    },
+    "notebook.diff.ignoreMetadata": true,
+    "notebook.output.minimalErrorRendering": true,
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.userFileIndexingLimit": 500,
+    "remote.autoForwardPortsSource": "output",
+    "remote.SSH.remotePlatform": {
+        "tomc-ux1": "linux"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "settingsSync.ignoredExtensions": [
+        "eamodio.gitlens",
+        "ms-vscode.js-debug-companion"
+    ],
+    "settingsSync.ignoredSettings": [
+        "update.mode"
+    ],
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.startupEditor": "none",
+    // specifics for r/radian config",
+    "r.bracketedPaste": true,
+    "r.plot.defaults.fullWindowMode": true,
+    "r.rmarkdown.knit.useBackgroundProcess": false,
+    "r.alwaysUseActiveTerminal": true,
+    "r.lsp.diagnostics": false,
+    "r.rpath.linux": "/local1/storage/envs/renv/bin/R",
+    "r.rterm.linux": "/local1/storage/envs/renv/bin/radian",
+    // "python.condaPath": "/home/tom.chartrand/miniforge3/bin/conda
+    // "terminal.integrated.defaultProfile.linux": "bash",
+    // "terminal.integrated.profiles.linux": {
+    //     "bash": {
+    //         "path": "bash",
+    //         "icon": "terminal-bash",
+    //         "args": ["--login"]
+    //     }
+    // },
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.scrollback": 5000,
+    "update.mode": "manual",
+    "debugpy.debugJustMyCode": false,
+    "jupyter.debugJustMyCode": false,
+    "python.trace.server": "verbose",
+    "jupyter.enableExtendedPythonKernelCompletions": true,
+    "docker.dockerPath": "podman",
+    "docker.environment": {
+        "DOCKER_HOST": "unix:///run/user/17884/podman/podman.sock"
+    },
+    "docker.host": "unix:///run/user/17884/podman/podman.sock",
+    "docker.composeCommand": "podman-compose",
+    "git.openRepositoryInParentFolders": "never",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "python": true
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "jupyter.kernels.excludePythonEnvironments": [
+        "/bin/python",
+        "/usr/bin/python"
+    ],
+    "git.autoStash": true,
+    "git.requireGitUserConfig": false,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "git.blame.statusBarItem.enabled": true,
+    "go-template.languages": [
+        ""
+    ],
+    "go-template.patterns": [
+        "**/*.tmpl"
+    ],
 }
