@@ -2,11 +2,11 @@
 
 # note: this is set to run every time, since symlinks seem to disappear on CO restart
 {{if env "CO_COMPUTATION_ID"}}
-CODE_DIR="~/capsule/code/.vscode/User/"
+CODE_DIR="{{.chezmoi.homeDir}}/capsule/code/.vscode/User/"
 {{else if eq .chezmoi.os "darwin"}}
-CODE_DIR="~/Library/Application Support/Code/User/"
+CODE_DIR="{{.chezmoi.homeDir}}/Library/Application Support/Code/User/"
 {{else if eq .chezmoi.os "linux"}}
-CODE_DIR="~/.config/Code/User/"
+CODE_DIR="{{.chezmoi.homeDir}}/.config/Code/User/"
 {{end}}
 
 # rename files first if they exist
