@@ -52,8 +52,6 @@
     "files.watcherExclude": {
         "data/**": true
     },
-    "git-graph.dialog.merge.noFastForward": false,
-    "git-graph.repository.commits.mute.commitsThatAreNotAncestorsOfHead": true,
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.pullBeforeCheckout": true,
@@ -66,19 +64,6 @@
         "njpwerner.autodocstring",
     ],
     "github.codespaces.showPerformanceExplorer": true,
-    "githubIssues.queries": [
-        {
-            "label": "My Issues",
-            "query": "default"
-        },
-        {
-            "label": "Created Issues",
-            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
-        }
-    ],
-    "githubPullRequests.createOnPublishBranch": "never",
-    "githubPullRequests.fileListLayout": "flat",
-    "githubPullRequests.pullBranch": "never",
     "jupyter.allowUnauthorizedRemoteConnection": true,
     "jupyter.askForKernelRestart": false,
     "jupyter.disableJupyterAutoStart": true,
@@ -127,7 +112,6 @@
     "update.mode": "manual",
     "debugpy.debugJustMyCode": false,
     "jupyter.debugJustMyCode": false,
-    "python.trace.server": "verbose",
     "jupyter.enableExtendedPythonKernelCompletions": true,
     "docker.dockerPath": "podman",
     "docker.environment": {
