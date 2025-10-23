@@ -11,12 +11,15 @@ CODE_DIR="{{.chezmoi.homeDir}}/.config/Code/User/"
 
 # rename files first if they exist
 if [ -e $CODE_DIR/keybindings.json ]; then
+    echo "Backing up existing keybindings.json to keybindings.json.bak"
     mv $CODE_DIR/keybindings.json $CODE_DIR/keybindings.json.bak
 fi
 if [ -e $CODE_DIR/settings.json ]; then
+    echo "Backing up existing settings.json to settings.json.bak"
     mv $CODE_DIR/settings.json $CODE_DIR/settings.json.bak
 fi
 if [ -e $CODE_DIR/tasks.json ]; then
+    echo "Backing up existing tasks.json to tasks.json.bak"
     mv $CODE_DIR/tasks.json $CODE_DIR/tasks.json.bak
 fi
 ln -s {{ .chezmoi.sourceDir }}/vscode/keybindings.json $CODE_DIR
