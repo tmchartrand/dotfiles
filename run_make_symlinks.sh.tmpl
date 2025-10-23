@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# note: this is set to run every time, since symlinks seem to disappear on CO restart
+{{- if env "CO_COMPUTATION_ID" -}}
+CODE_DIR="~/capsule/code/.vscode/User/"
+{{- else if eq .chezmoi.os "darwin" -}}
+CODE_DIR="~/Library/Application Support/Code/User/"
+{{- else if eq .chezmoi.os "linux" -}}
+CODE_DIR="~/.config/Code/User/"
+{{- end -}}
+
+# rename files first if they exist
+if [ -e $CODE_DIR/keybindings.json ]; then
+    mv $CODE_DIR/keybindings.json $CODE_DIR/keybindings.json.bak
+fi
+if [ -e $CODE_DIR/settings.json ]; then
+    mv $CODE_DIR/settings.json $CODE_DIR/settings.json.bak
+fi
+if [ -e $CODE_DIR/tasks.json ]; then
+    mv $CODE_DIR/tasks.json $CODE_DIR/tasks.json.bak
+fi
+ln -s {{ .chezmoi.sourceDir }}/vscode/keybindings.json $CODE_DIR
+ln -s {{ .chezmoi.sourceDir }}/vscode/settings.json $CODE_DIR
+ln -s {{ .chezmoi.sourceDir }}/vscode/tasks.json $CODE_DIR
